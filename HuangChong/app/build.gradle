@@ -34,7 +34,7 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.8.0'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.android.support:recyclerview-v7:26+'
-    compile files('libs/AMap3DMap-pro_5.3.0_20170824.jar')
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/AMap3DMap-pro_5.3.0_20170824.jar')
 }
