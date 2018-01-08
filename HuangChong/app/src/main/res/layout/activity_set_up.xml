@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.a110.myhuangchong.ui.SetUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="＜"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        android:id="@+id/fh1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/qd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:id="@+id/view2"
+        android:background="#F0F1F5"
+        android:layout_below="@+id/fh1"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_below="@+id/introduction"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/functions">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/aps"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新功能介绍"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x390"
+            android:layout_gravity="center"
+            android:text="＞"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/functions"
+        android:layout_alignEnd="@+id/qd"
+        android:id="@+id/score">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/praise"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去评分"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x510"
+            android:layout_gravity="center"
+            android:text="＞"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/score"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/about">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/about"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于欢欢"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x450"
+            android:layout_gravity="center"
+            android:text="＞"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#F0F1F5"
+
+        android:layout_below="@+id/about"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/view3" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout5"
+       >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/picture_wifi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅WIFI下显示图片"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+        <CheckBox
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x150"
+            android:button="@null"
+            android:background="@mipmap/off"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:id="@+id/introduction"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/product_proposal"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品介绍"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x450"
+            android:layout_gravity="center"
+            android:text="＞"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/picture">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/cache"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片缓存文件大小"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x200"
+            android:layout_gravity="center"
+            android:text="＞"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/caching"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/picture"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/clear"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x450"
+            android:layout_gravity="center"
+            android:text="＞"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

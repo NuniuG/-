@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    tools:context="com.example.a110.myhuangchong.ui.UserActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fh"
+        android:text="＜"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:textSize="30dp"
+        android:text="注册"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎你加入宠物寄养"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/fh"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit1"
+        android:hint="请输入手机号码"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit2"
+        android:hint="请输入密码"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/edit1"
+        android:layout_alignStart="@+id/edit1"
+        android:layout_marginTop="24dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sing_in"
+        android:text="登录"
+        android:background="#D18800"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit2"
+        android:layout_alignEnd="@+id/edit2"
+        android:layout_marginTop="15dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="----------使用第三方账号登录---------"
+        android:layout_below="@+id/sing_in"
+        android:layout_alignStart="@+id/sing_in"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/wexin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/fh"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="33dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/login_weixin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/qq"
+        android:layout_alignTop="@+id/wexin"
+        android:layout_toStartOf="@+id/password">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/login_qq"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机QQ"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:text="忘记密码"
+        android:textSize="10dp"
+        android:layout_alignTop="@+id/edit2"
+        android:layout_alignEnd="@+id/edit2" />
+
+
+</RelativeLayout>

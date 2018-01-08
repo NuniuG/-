@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical" >-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+             <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:text="所在地"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_all_address"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:drawablePadding="5dp"-->
+                <!--android:drawableRight="@drawable/img_go"-->
+                <!--android:text="选择其他城市"-->
+                <!--android:textSize="15sp" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<com.huanchong.pet.widget.CustomGridView-->
+            <!--android:id="@+id/main_place_show"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/dp10"-->
+            <!--android:layout_marginTop="@dimen/dp10" >-->
+        <!--</com.huanchong.pet.widget.CustomGridView>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#22330000" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="服务筛选"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<com.huanchong.pet.widget.CustomGridView-->
+            <!--android:id="@+id/main_service_show"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/dp10"-->
+            <!--android:layout_marginTop="@dimen/dp10" >-->
+        <!--</com.huanchong.pet.widget.CustomGridView>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#22330000" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:text="节假日筛选"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<com.huanchong.pet.widget.CustomGridView-->
+            <!--android:id="@+id/main_holiday_show"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/dp10"-->
+            <!--android:layout_marginTop="@dimen/dp10" >-->
+        <!--</com.huanchong.pet.widget.CustomGridView>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#22330000" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/main_congzhi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="5dp"-->
+
+            <!--android:text="重置" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/main_screen"-->
+            <!--style="?android:attr/buttonBarButtonStyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="30dp"-->
+
+            <!--android:text="查询" />-->
+    <!--</LinearLayout>-->
+
+</ScrollView>

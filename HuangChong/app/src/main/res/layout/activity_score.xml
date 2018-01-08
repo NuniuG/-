@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a110.myhuangchong.ui.ScoreActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fh2"
+        android:text="＜"
+        android:layout_marginLeft="@dimen/x10"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_marginRight="@dimen/x10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textSize="20dp"
+
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView6" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namma"
+        android:text="11111111111111111"
+        android:textSize="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/tx"
+        android:progressTint="@color/huan"
+        android:layout_centerHorizontal="true"
+        android:progressBackgroundTint="@color/huan"
+        android:secondaryProgressTint="@color/huan"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/tx"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/namma"
+
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentStart="true"
+        android:hint="请定下你对我的评价"
+        android:layout_marginLeft="@dimen/x90"
+        android:layout_marginRight="@dimen/x90"
+        android:background="@null"
+        />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y300">
+
+    <ImageView
+        android:id="@+id/iv_mycw_item_image1"
+        android:layout_width="@dimen/x220"
+        android:layout_height="@dimen/y220"
+        android:layout_alignTop="@+id/tv_mycw_item_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginStart="@dimen/y20" />
+
+    <TextView
+        android:id="@+id/tv_mycw_item_title"
+        android:text="标题"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_mycw_item_image1"
+        android:layout_toEndOf="@+id/iv_mycw_item_image1"
+        android:layout_marginLeft="@dimen/x100"
+        android:layout_marginStart="@dimen/y60"
+        android:layout_marginTop="@dimen/y50" />
+    <ImageView
+
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/y60"
+        android:id="@+id/iv_mycw_item_image2"
+        android:layout_alignTop="@+id/tv_mycw_item_title"
+        android:layout_toRightOf="@+id/tv_mycw_item_context"
+        android:layout_toEndOf="@+id/tv_mycw_item_context" />
+
+    <TextView
+        android:id="@+id/tv_mycw_item_context"
+        android:text="shibushi"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/tv_mycw_item_title"
+        android:layout_alignLeft="@+id/tv_mycw_item_title"
+        android:layout_alignStart="@+id/tv_mycw_item_title" />
+</RelativeLayout>

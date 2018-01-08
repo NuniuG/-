@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="7"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+
+
+
+        <TextView
+            android:id="@+id/pop_computer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="小型犬"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/pop_haoping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="中型犬"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/pop_dingdan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="大型犬"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/pop_jaige"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="猫"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/pop_xiaochong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="小宠"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/pop_youquan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="猫"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2.25dp"
+            android:background="#fa7829"
+            android:layout_alignParentTop="true"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
