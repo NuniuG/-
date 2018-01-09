@@ -30,9 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".wangxu.MainActivity"/>
-        <activity android:name=".login.YdActivity"/>
-        <activity android:name=".wangxu.MapActivity"/>
+
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -41,6 +39,7 @@
         </meta-data>
         <activity android:name=".chehua.ui.UserActivity" />
         <activity android:name=".chehua.ui.RegisterActivity" />
+
         <activity
             android:name="com.umeng.qq.tencent.AuthActivity"
             android:launchMode="singleTask"
@@ -54,6 +53,18 @@
                 <data android:scheme="tencent100424468" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".wangxu.MainActivity"/>
+        <activity android:name=".login.YdActivity"/>
+        <activity android:name=".wangxu.MapActivity"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c8fd46f0bf74131d6ea2ec97c701e791"/>
+
+        <activity android:name=".chehua.ui.UserActivity" />
+        <activity android:name=".chehua.ui.RegisterActivity" />
+
         <activity
             android:name="com.umeng.qq.tencent.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
