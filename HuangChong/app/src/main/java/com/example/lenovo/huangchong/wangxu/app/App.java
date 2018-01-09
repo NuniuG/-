@@ -3,8 +3,10 @@ package com.example.lenovo.huangchong.wangxu.app;
 
 import android.app.Application;
 
+import com.example.lenovo.huangchong.chehua.ui.utitls.TokenUtil;
 import com.example.lenovo.huangchong.wangxu.base.BaseActivity;
 import com.example.lenovo.huangchong.wangxu.base.BaseFragment;
+import com.lzy.okhttputils.OkHttpUtils;
 import com.umeng.socialize.Config;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
@@ -26,5 +28,10 @@ public class App extends Application {
         super.onCreate();
         UMShareAPI.get(this);
         Config.DEBUG = true;
+
+
+        TokenUtil.init(getApplicationContext());
+        //必须调用初始化
+        OkHttpUtils.init(this);
     }
 }
