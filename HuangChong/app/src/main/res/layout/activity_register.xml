@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,19 +50,6 @@
         android:layout_marginTop="10dp"
         android:id="@+id/textView5"
         android:layout_alignParentLeft="true" />
-
-
-    <EditText
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="请设置密码"
-        android:textSize="20dp"
-        android:layout_below="@+id/yhm"
-
-        android:layout_marginTop="2dp"
-        android:id="@+id/mm" />
 
 
     <TextView
@@ -114,19 +100,19 @@
         android:layout_alignTop="@+id/wexin1"
         android:layout_toStartOf="@+id/code"
         android:layout_toLeftOf="@+id/code">
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@mipmap/login_qq"
-        />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/login_qq"
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="手机QQ"
-        android:textSize="20dp"
-        android:layout_gravity="center_horizontal"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机QQ"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            />
 
     </LinearLayout>
 
@@ -142,16 +128,6 @@
         android:layout_alignParentRight="true" />
 
     <EditText
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="请输入验证码"
-        android:id="@+id/sr"
-        android:layout_below="@+id/sjh"
-    />
-
-    <EditText
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
@@ -160,7 +136,7 @@
         android:id="@+id/sjh"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/textView5"
-/>
+        />
 
     <EditText
         android:layout_marginRight="10dp"
@@ -184,4 +160,24 @@
         android:layout_below="@+id/mm"
         android:layout_alignStart="@+id/mm"
         android:layout_alignLeft="@+id/mm" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入验证码"
+        android:id="@+id/sr"
+        android:layout_below="@+id/sjh"
+        android:layout_alignLeft="@+id/sjh"
+        android:layout_alignStart="@+id/sjh" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请设置密码"
+        android:textSize="20dp"
+
+        android:id="@+id/mm"
+        android:layout_below="@+id/yhm"
+        android:layout_alignLeft="@+id/yhm"
+        android:layout_alignStart="@+id/yhm" />
 </RelativeLayout>

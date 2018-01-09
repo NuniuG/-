@@ -15,6 +15,25 @@
     <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+
+
     <application
         android:name=".wangxu.app.App"
         android:allowBackup="true"
@@ -30,17 +49,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".wangxu.MainActivity"/>
-        <activity android:name=".login.YdActivity"/>
-        <activity android:name=".wangxu.MapActivity"/>
 
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="df5cedfff549db8e366c0c3513ce5e34">
-            //开发者申请的key
-        </meta-data>
         <activity android:name=".chehua.ui.UserActivity" />
         <activity android:name=".chehua.ui.RegisterActivity" />
+
         <activity
             android:name="com.umeng.qq.tencent.AuthActivity"
             android:launchMode="singleTask"
@@ -54,6 +66,18 @@
                 <data android:scheme="tencent100424468" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".wangxu.MainActivity"/>
+        <activity android:name=".login.YdActivity"/>
+        <activity android:name=".wangxu.MapActivity"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c8fd46f0bf74131d6ea2ec97c701e791"/>
+
+        <!--<activity android:name=".chehua.ui.UserActivity" />-->
+        <!--<activity android:name=".chehua.ui.RegisterActivity" />-->
+
         <activity
             android:name="com.umeng.qq.tencent.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -68,7 +92,15 @@
         <activity android:name=".chehua.ui.WalletActivity" />
         <activity android:name=".chehua.ui.IntegralActivity" />
         <activity android:name=".chehua.ui.PasswordAdapter" />
+        <activity android:name=".wangxu.XzcityActivity"/>
         <!--<activity android:name=".chehua.ui.PetActivity"/>-->
+
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
     </application>
 
 </manifest>
