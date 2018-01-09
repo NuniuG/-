@@ -5,7 +5,7 @@ android {
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.lenovo.huangchong"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,7 @@ android {
             dirs 'libs'
         }
     }
+
 
     dependencies {
         compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -50,5 +51,13 @@ android {
         compile name: 'SMSSDKGUI-2.1.2', ext: 'aar'
         compile files('libs/MobCommons-2016.1012.1447.jar')
         compile files('libs/MobTools-2016.1012.1447.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+
+    compile files('libs/pinyin4j-2.5.0.jar')
+
+    compile files('libs/AMap3DMap-pro_5.3.0_20170824.jar')
     }
 }
+
+
+

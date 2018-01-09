@@ -67,6 +67,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     @Bind(R.id.Homerecyclerview)
     RecyclerView Homerecyclerview;
     private PopupWindow popupWindow;
+    private PopupWindow popupWindow2;
     private TextView text1;
     private TextView text2;
     private TextView text3;
@@ -193,9 +194,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 break;
         }
 
-
     }
-
 
     private void Showpouplewindow() {
         //寻找布局
@@ -289,18 +288,14 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 break;
             case R.id.rb3:
                 if (check) {
-                    popupWindow.dismiss();
+//                    popupWindow.dismiss();
                     rb1.setChecked(false);
                     rb2.setChecked(false);
                     Saixuan();
 
-
                 }
                 break;
-
-
         }
-
 
     }
 
@@ -363,11 +358,11 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     private void Showpouplewindow2() {
         View contentView = LayoutInflater.from(MainActivity.this).inflate(R.layout.popuplayouttwo, null);
 
-        popupWindow = new PopupWindow(contentView);
+        popupWindow2 = new PopupWindow(contentView);
         //设置宽度
-        popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
+        popupWindow2.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         //设置高度
-        popupWindow.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
+        popupWindow2.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
 
         //隐藏recyclerview
         Homerecyclerview.setVisibility(View.GONE);
@@ -375,7 +370,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         //设置入场动画
 //        popupWindow.setAnimationStyle(R.style.contextMenuAnim);
         //显示popupwindow
-        popupWindow.showAsDropDown(rb1);
+        popupWindow2.showAsDropDown(rb1);
 
 
     }

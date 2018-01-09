@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+    <!--字母导航-->
+    <com.example.lenovo.huangchong.IndexListView
+        android:id="@+id/words"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+    <!--这个就用来显示我们当前按下的字母-->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/info_et"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:visibility="gone" />
 
 
 
-
-</LinearLayout>
+</RelativeLayout>

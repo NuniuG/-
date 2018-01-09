@@ -50,6 +50,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".chehua.ui.UserActivity" />
+        <activity android:name=".chehua.ui.RegisterActivity" />
+
         <activity
             android:name="com.umeng.qq.tencent.AuthActivity"
             android:launchMode="singleTask"
@@ -72,8 +75,8 @@
             android:name="com.amap.api.v2.apikey"
             android:value="c8fd46f0bf74131d6ea2ec97c701e791"/>
 
-        <activity android:name=".chehua.ui.UserActivity" />
-        <activity android:name=".chehua.ui.RegisterActivity" />
+        <!--<activity android:name=".chehua.ui.UserActivity" />-->
+        <!--<activity android:name=".chehua.ui.RegisterActivity" />-->
 
         <activity
             android:name="com.umeng.qq.tencent.AssistActivity"
@@ -89,6 +92,7 @@
         <activity android:name=".chehua.ui.WalletActivity" />
         <activity android:name=".chehua.ui.IntegralActivity" />
         <activity android:name=".chehua.ui.PasswordAdapter" />
+        <activity android:name=".wangxu.XzcityActivity"/>
         <!--<activity android:name=".chehua.ui.PetActivity"/>-->
 
 
