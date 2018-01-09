@@ -28,7 +28,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'com.eftimoff:android-pathview:1.0.8@aar'
-    compile 'com.android.support:design:23.0.0'
+    compile 'com.android.support:design:26+'
     compile 'com.squareup.okhttp3:okhttp:3.9.0'
     compile 'com.youth.banner:banner:1.4.9'
     compile 'com.github.bumptech.glide:glide:3.8.0'
@@ -37,4 +37,5 @@ dependencies {
     compile files('libs/AMap3DMap-pro_5.3.0_20170824.jar')
     compile 'com.squareup.picasso:picasso:2.3.2'
     compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
 }

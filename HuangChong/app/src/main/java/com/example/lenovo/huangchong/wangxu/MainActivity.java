@@ -193,9 +193,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 break;
         }
 
-
     }
-
 
     private void Showpouplewindow() {
         //寻找布局
@@ -294,13 +292,9 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                     rb2.setChecked(false);
                     Saixuan();
 
-
                 }
                 break;
-
-
         }
-
 
     }
 

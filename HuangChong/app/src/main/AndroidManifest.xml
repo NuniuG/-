@@ -37,7 +37,7 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="df5cedfff549db8e366c0c3513ce5e34">
-            //开发者申请的key
+            <!--开发者申请的key-->
         </meta-data>
         <activity android:name=".chehua.ui.UserActivity" />
         <activity android:name=".chehua.ui.RegisterActivity" />
@@ -68,6 +68,7 @@
         <activity android:name=".chehua.ui.WalletActivity" />
         <activity android:name=".chehua.ui.IntegralActivity" />
         <activity android:name=".chehua.ui.PasswordAdapter" />
+        <activity android:name=".wangxu.XzcityActivity"/>
         <!--<activity android:name=".chehua.ui.PetActivity"/>-->
     </application>
 
