@@ -200,6 +200,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         //寻找布局
         View contentView = LayoutInflater.from(MainActivity.this).inflate(R.layout.popuplayout, null);
 
+
         text1 = contentView.findViewById(R.id.pop_computer);
         text2 = contentView.findViewById(R.id.pop_dingdan);
         text3 = contentView.findViewById(R.id.pop_haoping);
@@ -247,10 +248,19 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         //隐藏recyclerview
         Homerecyclerview.setVisibility(View.GONE);
 
+
+//        popupWindow.setOutsideTouchable(true);
+
+//        popupWindow.setFocusable(true);
+
+
+        popupWindow.setTouchable(false);
+
         //设置入场动画
 //        popupWindow.setAnimationStyle(R.style.contextMenuAnim);
         //显示popupwindow
         popupWindow.showAsDropDown(rb1);
+
 
 
     }
@@ -280,11 +290,13 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
                 break;
             case R.id.rb2:
+
                 if (check) {
                     rb1.setChecked(false);
                     rb3.setChecked(false);
                     Showpouplewindow2();
                 }
+
                 break;
             case R.id.rb3:
                 if (check) {
@@ -344,8 +356,14 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         //设置高度
         popupWindow.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
 
+
+        popupWindow.setTouchable(false);
         //隐藏recyclerview
         Homerecyclerview.setVisibility(View.GONE);
+
+
+        //设置防止抢占焦点
+//        popupWindow.setFocusable(true);
 
         //设置入场动画
 //        popupWindow.setAnimationStyle(R.style.contextMenuAnim);
@@ -358,19 +376,22 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     private void Showpouplewindow2() {
         View contentView = LayoutInflater.from(MainActivity.this).inflate(R.layout.popuplayouttwo, null);
 
-        popupWindow2 = new PopupWindow(contentView);
+        popupWindow = new PopupWindow(contentView);
         //设置宽度
-        popupWindow2.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
+        popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         //设置高度
-        popupWindow2.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
+        popupWindow.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
 
         //隐藏recyclerview
         Homerecyclerview.setVisibility(View.GONE);
 
+
+        popupWindow.setTouchable(false);
+//        popupWindow.setFocusable(false);
         //设置入场动画
 //        popupWindow.setAnimationStyle(R.style.contextMenuAnim);
         //显示popupwindow
-        popupWindow2.showAsDropDown(rb1);
+        popupWindow.showAsDropDown(rb1);
 
 
     }
