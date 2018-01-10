@@ -171,7 +171,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
             //钱包
             case R.id.wallet:
-
+            //keneng
                 Intent walle = new Intent(MainActivity.this, WalletActivity.class);
                 startActivity(walle);
 
