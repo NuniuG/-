@@ -1,5 +1,6 @@
 package com.example.lenovo.huangchong.login;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -69,7 +70,7 @@ public class StartActivity extends Activity {
                                     finish();
                                 }
                             }
-                        }, 2000);
+                        }, 1000);
                     }
                 })
                 .interpolator(new AccelerateDecelerateInterpolator())

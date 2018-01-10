@@ -8,7 +8,7 @@
 
     <com.eftimoff.androipathview.PathView
         android:id="@+id/pathView"
-        app:pathColor="#0f0"
+        app:pathColor="#ff0"
         app:svg="@raw/pet_icon"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -15,6 +15,25 @@
     <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+
+
     <application
         android:name=".wangxu.app.App"
         android:allowBackup="true"
@@ -31,8 +50,13 @@
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
 
 
+=======
+        <activity android:name=".chehua.ui.UserActivity" />
+        <activity android:name=".chehua.ui.RegisterActivity" />
+>>>>>>> 4ce1dbbc43e7d18819818923ac67583f9084492c
 
         <activity
             android:name="com.umeng.qq.tencent.AuthActivity"
@@ -56,8 +80,8 @@
             android:name="com.amap.api.v2.apikey"
             android:value="c8fd46f0bf74131d6ea2ec97c701e791"/>
 
-        <activity android:name=".chehua.ui.UserActivity" />
-        <activity android:name=".chehua.ui.RegisterActivity" />
+        <!--<activity android:name=".chehua.ui.UserActivity" />-->
+        <!--<activity android:name=".chehua.ui.RegisterActivity" />-->
 
         <activity
             android:name="com.umeng.qq.tencent.AssistActivity"
@@ -75,6 +99,13 @@
         <activity android:name=".chehua.ui.PasswordAdapter" />
         <activity android:name=".wangxu.XzcityActivity"/>
         <!--<activity android:name=".chehua.ui.PetActivity"/>-->
+
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
     </application>
 
 </manifest>
